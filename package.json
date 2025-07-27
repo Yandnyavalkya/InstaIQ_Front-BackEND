@@ -1,0 +1,36 @@
+{
+  "name": "instaiq-pro",
+  "version": "1.0.0",
+  "description": "Insta-IQ Pro - Education Platform for Career Guidance",
+  "main": "index.js",
+  "scripts": {
+    "setup": "node create-env-files.js",
+    "install-all": "npm install && cd Backend && npm install && cd ../instaiq-react && npm install",
+    "dev": "node start-servers.js",
+    "dev:backend": "cd Backend && npm run dev",
+    "dev:frontend": "cd instaiq-react && npm run dev",
+    "build": "cd instaiq-react && npm run build",
+    "start": "cd Backend && npm start",
+    "create-admin": "node create-admin.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "education",
+    "career-guidance",
+    "courses",
+    "events",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "Insta-IQ Team",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/instaiq-pro.git"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+} 
